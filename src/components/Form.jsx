@@ -69,7 +69,7 @@ const Form = () => {
         setCodeInput("");
         setShowCodeModal(true);
       } else {
-       toast.error(res.data.message);
+        toast.error(res.data.message);
       }
 
     } catch (error) {
@@ -78,7 +78,7 @@ const Form = () => {
       if (error.response) {
         alert(error.response.data.message);
       } else {
-       toast.error("Server error. Please try again.");
+        toast.error("Server error. Please try again.");
       }
     } finally {
       setLoading(false);
@@ -89,16 +89,16 @@ const Form = () => {
     try {
       setVerifying(true);
       const res = await axios.post(
-        "https://jet-taxi-backend.vercel.app/api/confirm-booking",
+        `${BaseUrl}/api/confirm-booking`,
         { email: formData.email, code: codeInput }
       );
 
       if (res.data.status === "ok") {
-       toast.success("Booking confirmed! We will contact you soon.");
+        toast.success("Booking confirmed! We will contact you soon.");
         setCodeInput("");
         setShowCodeModal(false);
       } else {
-       toast.error("Invalid Code Try Again!");
+        toast.error("Invalid Code Try Again!");
       }
 
     } catch (error) {
@@ -106,7 +106,7 @@ const Form = () => {
 
       if (error.response) {
 
-          toast.error(error.response.data.message);
+        toast.error(error.response.data.message);
       } else {
         toast.error("Server error. Please try again.");
       }
@@ -255,16 +255,22 @@ const Form = () => {
               <LuUsers size={14} className="text-gray-400" /> Number of
               Passengers
             </label>
-            <input
-              type="number"
+               <input
+              type="text"
+              inputMode="numeric"
               name="passengers"
               value={formData.passengers}
-              onChange={(e) =>
-                setFormData((prev) => ({
-                  ...prev,
-                  passengers: Math.max(1, parseInt(e.target.value) || 1)
-                }))
-              }
+              onChange={(e) => {
+                const value = e.target.value;
+
+                // allow only digits OR empty
+                if (/^\d*$/.test(value)) {
+                  setFormData((prev) => ({
+                    ...prev,
+                    passengers: value === "" ? "" : Number(value)
+                  }));
+                }
+              }}
             />
           </div>
         </div>
