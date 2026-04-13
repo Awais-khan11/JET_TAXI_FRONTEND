@@ -52,12 +52,16 @@ const Form = () => {
     }))
   }
 
+  console.log(import.meta.env.VITE_BACKEND_URL)
+
+  const BaseUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/send-code",
+        `${BaseUrl}/api/send-code`,
         formData
       );
       console.log(res.data);
@@ -85,7 +89,7 @@ const Form = () => {
     try {
       setVerifying(true);
       const res = await axios.post(
-        "http://localhost:3000/api/confirm-booking",
+        "https://jet-taxi-backend.vercel.app/api/confirm-booking",
         { email: formData.email, code: codeInput }
       );
 
