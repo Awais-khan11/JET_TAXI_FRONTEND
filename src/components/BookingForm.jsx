@@ -77,10 +77,10 @@ const BookingForm = ({ setActivePage }) => {
                 Our team is available 24/7 to help with your booking.
               </p>
               <a
-                href="tel:07862006604"
+                href="tel:+447999435333"
                 className="block w-full bg-gradient-to-r from-[#bdc3c7] to-[#7f8c8d] text-[#001C3D] text-center font-black py-3.5 rounded-md text-[15px] hover:shadow-lg transition-all"
               >
-                CALL 07862 006604
+                CALL +447999435333
               </a>
             </div>
           </div>

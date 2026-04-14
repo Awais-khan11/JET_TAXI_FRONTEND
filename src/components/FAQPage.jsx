@@ -211,7 +211,7 @@ const FAQPage = ({ setActivePage }) => {
                   Book Now
                 </button>
                 <button
-                  onClick={() => window.open("tel:01334000000")}
+                  onClick={() => window.open("tel:+447999435333")}
                   style={{ borderColor: brandBlue, color: brandBlue }}
                   className="w-full sm:w-auto bg-white border-2 font-bold py-3.5 px-8 rounded-xl text-[13px] flex items-center justify-center gap-2 active:scale-95 transition-all"
                 >

@@ -262,8 +262,6 @@ const Form = () => {
               value={formData.passengers}
               onChange={(e) => {
                 const value = e.target.value;
-
-                // allow only digits OR empty
                 if (/^\d*$/.test(value)) {
                   setFormData((prev) => ({
                     ...prev,

@@ -49,10 +49,10 @@ const Navbar = ({ setActivePage, activePage }) => {
           <h1
             className={`text-[20px] sm:text-[28px] font-black italic leading-none tracking-tighter ${isScrolled ? "lg:text-white" : ""}`}
           >
-            JET TAXI
+            St andrew taxi
           </h1>
-          <span className="text-[7px] sm:text-[8px] font-bold text-[#94a3b8] tracking-[0.3em] uppercase mt-1">
-            ST ANDREWS
+          <span className="text-[20px] sm:text-[10px] font-bold text-[#fff] tracking-[0.3em] uppercase mt-1 ">
+            24/7
           </span>
         </div>
 
