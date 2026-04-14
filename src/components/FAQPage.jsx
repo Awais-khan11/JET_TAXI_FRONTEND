@@ -268,7 +268,7 @@ const FAQPage = ({ setActivePage }) => {
                 letterSpacing: "1px",
               }}
             >
-             St andrews <span style={{ color: "#fff" }}>TAXI</span>
+             St Andrews <span style={{ color: "#fff" }}>TAXI</span>
             </h2>
             <p
               style={{
