@@ -311,7 +311,7 @@ const BlogSection = () => {
                       gap: "5px",
                     }}
                   >
-                    <User size={14} color="#002147" /> Jet Taxi
+                    <User size={14} color="#002147" />St Andrews Taxi
                   </div>
                   <button
                     onClick={() => setSelectedPost(post)}

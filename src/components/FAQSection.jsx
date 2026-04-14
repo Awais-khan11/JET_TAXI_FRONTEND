@@ -10,7 +10,7 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "How do I book a taxi with Jet Taxi St Andrews?",
+      question: "How do I book a taxi with St Andrews Taxi?",
       answer:
         "You can book easily through our website booking form, or by calling our 24/7 dispatch center.",
     },
@@ -171,12 +171,16 @@ const FAQSection = () => {
               >
                 Book a Ride
               </button>
-              <button
+              <a href="tel:+447999435333" style={{ textDecoration: "none" }}>
+                   <button 
+                
                 className="btn-call"
                 style={{ borderColor: brandBlue, color: brandBlue }}
               >
                 <Phone size={18} /> Call Us
               </button>
+              </a>
+             
             </div>
           </motion.div>
         </motion.div>
@@ -188,7 +192,7 @@ const FAQSection = () => {
           viewport={{ once: true }}
           className="faq-right"
         >
-          <img src={golfDefault} alt="Jet Taxi St Andrews" />
+          <img src={golfDefault} alt="St Andrews Taxi" />
         </motion.div>
       </div>
 

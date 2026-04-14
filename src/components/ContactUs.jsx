@@ -66,25 +66,30 @@ const ContactHero = ({ setActivePage }) => {
             </p>
 
             <div className="cursor-pointer flex flex-col sm:flex-row gap-6 md:gap-10">
-              <div className="flex items-center gap-4 group">
-                <div
-                  style={{
-                    background: `linear-gradient(135deg, ${brandLight}, ${brandBlue})`,
-                  }}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110"
-                >
-                  <Phone size={20} strokeWidth={2.5} />
-                </div>
-                <div>
-                  <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-0.5">
-                    Call Us
-                  </p>
-                  <p
-                    className="text-white text-[16px] md:text-[19px] font-bold"
-                    style={{ fontFamily: "Playfair Display, serif" }}
+              <div
+                onClick={() => window.location.href = "tel:+447999435333"}
+                className="cursor-pointer flex flex-col sm:flex-row gap-6 md:gap-10"
+              >
+                <div className="flex items-center gap-4 group">
+                  <div
+                    style={{
+                      background: `linear-gradient(135deg, ${brandLight}, ${brandBlue})`,
+                    }}
+                    className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110"
                   >
-                    +447999435333
-                  </p>
+                    <Phone size={20} strokeWidth={2.5} />
+                  </div>
+                  <div>
+                    <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-0.5">
+                      Call Us
+                    </p>
+                    <p
+                      className="text-white text-[16px] md:text-[19px] font-bold"
+                      style={{ fontFamily: "Playfair Display, serif" }}
+                    >
+                      +447999435333
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -140,7 +145,7 @@ const ContactHero = ({ setActivePage }) => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-7 bg-white border border-gray-100 rounded-xl p-5 md:p-7 shadow-xl shadow-blue-900/5">
-             <Form></Form> 
+              <Form></Form>
             </div>
 
             <div className="lg:col-span-5 space-y-6">
@@ -181,7 +186,7 @@ const ContactHero = ({ setActivePage }) => {
         </div>
       </section>
 
-        <BookARideSection></BookARideSection>
+      <BookARideSection></BookARideSection>
       <footer
         style={{
           backgroundColor: "#000",

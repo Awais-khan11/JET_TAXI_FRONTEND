@@ -29,7 +29,7 @@ const Reviews = ({ setActivePage }) => {
           <div className="bg-white/5 backdrop-blur-md border border-white/10 text-white p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl w-full flex flex-col justify-center relative overflow-hidden">
             <div className="relative z-10 text-center md:text-left">
               <h3 className="font-black text-xl md:text-2xl mb-1">
-                Jet Taxi St Andrews
+                St Andrews Taxi
               </h3>
               <p className="text-blue-100/70 mb-5 text-sm">
                 St Andrews, Scotland
@@ -42,7 +42,7 @@ const Reviews = ({ setActivePage }) => {
               {/* Buttons Grid */}
               <div className="grid grid-cols-2 gap-3">
                 <a
-                  href="tel:07862006604"
+                  href="tel:+447999435333"
                   className="flex flex-col items-center justify-center bg-white text-[#003366] py-4 md:py-3 rounded-2xl active:scale-95 transition-all shadow-lg"
                 >
                   <Phone size={20} className="mb-1" />
