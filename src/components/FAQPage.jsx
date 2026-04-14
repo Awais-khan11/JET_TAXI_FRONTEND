@@ -9,7 +9,7 @@ const FAQPage = ({ setActivePage }) => {
 
   const faqs = [
     {
-      question: "How do I book a taxi with Jet Taxi St Andrews?",
+      question: "How do I book a taxi with St Andrews Taxi?",
       answer:
         "You can book easily through our website booking form, or by calling our 24/7 dispatch center.",
     },
@@ -268,7 +268,7 @@ const FAQPage = ({ setActivePage }) => {
                 letterSpacing: "1px",
               }}
             >
-              JET <span style={{ color: "#fff" }}>TAXI</span>
+             St andrews <span style={{ color: "#fff" }}>TAXI</span>
             </h2>
             <p
               style={{
@@ -447,11 +447,10 @@ const FAQPage = ({ setActivePage }) => {
             }}
           >
             <p style={{ margin: "0" }}>
-              © 2025 Jet Taxi St Andrews. All rights reserved.
+              © 2026 St Andrews Taxi. All rights reserved.
             </p>
             <p style={{ margin: "0" }}>
-              St Andrews Cabs LTD trading as Jet Taxi St Andrews | Company
-              Number: SC863199
+              St Andrews Cabs LTD trading as St Andrews Taxi 
             </p>
             <p style={{ margin: "10px 0 0 0" }}>
               Developed by RR Apps Pty Ltd.

@@ -40,7 +40,7 @@ const Footer = ({ setActivePage }) => {
               letterSpacing: "1px",
             }}
           >
-            JET <span style={{ color: "#fff" }}>TAXI</span>
+            St Andrews <span style={{ color: "#fff" }}>TAXI</span>
           </h2>
           <p
             style={{
@@ -213,11 +213,10 @@ const Footer = ({ setActivePage }) => {
           }}
         >
           <p style={{ margin: "0" }}>
-            © 2025 Jet Taxi St Andrews. All rights reserved.
+            © 2026 St Andrews Taxi. All rights reserved.
           </p>
           <p style={{ margin: "0" }}>
-            St Andrews Cabs LTD trading as Jet Taxi St Andrews | Company Number:
-            SC863199
+            St Andrews Cabs LTD trading as St Andrews Taxi
           </p>
           <p style={{ margin: "10px 0 0 0" }}>Developed by RR Apps Pty Ltd.</p>
         </div>
