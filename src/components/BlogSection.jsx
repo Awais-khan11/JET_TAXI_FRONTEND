@@ -440,14 +440,14 @@ const BlogSection = () => {
                 <span
                   style={{ display: "flex", alignItems: "center", gap: "6px" }}
                 >
-                  <User size={16} color="#002147" /> Jet Taxi
+                  <User size={16} color="#002147" /> St Andrews Taxi
                 </span>
               </div>
               <p style={{ lineHeight: "1.8", color: "#444", fontSize: "16px" }}>
                 {selectedPost.description}
                 <br />
                 <br />
-                At Jet Taxi St Andrews, we pride ourselves on punctuality and
+                At St Andrews Taxi, we pride ourselves on punctuality and
                 comfort. Contact us today to book your next ride.
               </p>
             </div>

@@ -68,7 +68,7 @@ const AboutSection = ({ setActivePage }) => {
           <div className="relative h-[480px] md:h-[600px] rounded-r-[40px] overflow-hidden shadow-xl">
             <img
               src={taxiMinivan}
-              alt="Jet Taxi Service"
+              alt="St Andrews Taxi"
               className="w-full h-full object-cover"
             />
             <div className="absolute top-8 left-6 bg-[#001C3D]/90 p-4 rounded-xl border border-white/10 flex items-center gap-3 shadow-lg">
@@ -117,7 +117,7 @@ const AboutSection = ({ setActivePage }) => {
           <div className="flex items-center gap-2 mb-4">
             <span className="h-[2px] w-8 bg-[#001C3D]"></span>
             <span className="text-[#001C3D] font-bold text-[10px] uppercase tracking-[0.3em]">
-              ABOUT JET TAXI
+              ABOUT St Andrews Taxi 
             </span>
             <span className="h-[2px] w-8 bg-[#001C3D]"></span>
           </div>
@@ -127,8 +127,7 @@ const AboutSection = ({ setActivePage }) => {
           </h2>
 
           <p className="text-gray-500 text-[13px] md:text-[15px] mb-8 font-medium leading-[1.6] max-w-2xl">
-            Proudly serving St Andrews, Fife, and the surrounding areas, Jet
-            Taxi St Andrews delivers exceptional transport solutions tailored to
+            Proudly serving St Andrews, Fife, and the surrounding areas, St Andrews Taxi delivers exceptional transport solutions tailored to
             your needs.
           </p>
 

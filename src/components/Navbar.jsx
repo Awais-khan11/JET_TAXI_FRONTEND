@@ -118,7 +118,7 @@ const Navbar = ({ setActivePage, activePage }) => {
           <div className="flex justify-between items-center p-5 border-b border-gray-100">
             <div className="flex flex-col">
               <h1 className="text-lg font-black italic text-black leading-none">
-                JET TAXI
+                St Andrews Taxi
               </h1>
               <span className="text-[7px] font-bold text-[#002B5B] tracking-widest uppercase mt-0.5">
                 ST ANDREWS

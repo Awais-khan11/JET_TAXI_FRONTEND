@@ -55,7 +55,7 @@ const HowItWorks = ({ setActivePage }) => {
 
           {/* Responsive Font Size: text-3xl on mobile, text-5xl on desktop */}
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-[1.2]">
-            Simple steps to ride <br className="md:hidden" /> with Jet Taxi
+            Simple steps to ride <br className="md:hidden" /> with St Andrews Taxi
           </h2>
           <p className="text-gray-400 text-sm md:text-lg max-w-xl mx-auto md:mx-0">
             Book in minutes, get confirmation fast, and travel in comfort.
