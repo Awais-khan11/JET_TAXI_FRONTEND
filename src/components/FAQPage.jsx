@@ -453,7 +453,7 @@ const FAQPage = ({ setActivePage }) => {
               St Andrews Cabs LTD trading as St Andrews Taxi 
             </p>
             <p style={{ margin: "10px 0 0 0" }}>
-              Developed by RR Apps Pty Ltd.
+              Developed by MindCraft Ltd.
             </p>
           </div>
         </div>

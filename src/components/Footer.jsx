@@ -218,7 +218,7 @@ const Footer = ({ setActivePage }) => {
           <p style={{ margin: "0" }}>
             St Andrews Cabs LTD trading as St Andrews Taxi
           </p>
-          <p style={{ margin: "10px 0 0 0" }}>Developed by RR Apps Pty Ltd.</p>
+          <p style={{ margin: "10px 0 0 0" }}>Developed by MindCraft Ltd.</p>
         </div>
       </div>
     </footer>
