@@ -4,9 +4,12 @@ export const InformationBar = () => {
       <div className="flex items-center gap-1.5 cursor-pointer hover:text-[#94a3b8] transition-colors">
         <span>standrews479@gmail.com</span>
       </div>
-      <div className="flex items-center gap-1.5 cursor-pointer hover:text-[#94a3b8] transition-colors">
+      <a
+        href="tel:+447999435333"
+        className="flex items-center gap-1.5 cursor-pointer hover:text-[#94a3b8] transition-colors"
+      >
         <span>+44 7999 435333</span>
-      </div>
+      </a>
       <div className="flex items-center gap-1.5">
         <span className="text-[#94a3b8]">24/7 Service</span>
       </div>

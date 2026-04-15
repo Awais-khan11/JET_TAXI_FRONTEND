@@ -32,7 +32,25 @@ const ContactHero = ({ setActivePage }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+    
+  useEffect(() => {
+  const element = document.getElementById("book-ride-form");
 
+  if (element) {
+    const yOffset = -80;
+
+    const y =
+      element.getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  }
+}, []);
+ 
   return (
     <div className="w-full font-sans antialiased overflow-x-hidden">
       {/* 1. HERO SECTION */}
@@ -143,7 +161,7 @@ const ContactHero = ({ setActivePage }) => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div id="book-ride-form" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-7 bg-white border border-gray-100 rounded-xl p-5 md:p-7 shadow-xl shadow-blue-900/5">
               <Form></Form>
             </div>
@@ -186,7 +204,7 @@ const ContactHero = ({ setActivePage }) => {
         </div>
       </section>
 
-      <BookARideSection></BookARideSection>
+
       <footer
         style={{
           backgroundColor: "#000",
@@ -407,7 +425,7 @@ const ContactHero = ({ setActivePage }) => {
               © 2026 St Andrews Taxi. All rights reserved.
             </p>
             <p style={{ margin: "0" }}>
-              St Andrews Cabs LTD trading as St Andrews Taxi 
+              St Andrews Cabs LTD trading as St Andrews Taxi
             </p>
             <p style={{ margin: "10px 0 0 0" }}>
               Developed by MindCraft Ltd.

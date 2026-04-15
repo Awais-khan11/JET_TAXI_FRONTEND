@@ -9,29 +9,35 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   const [activePage, setActivePageState] = useState("home");
+  const [scrollTarget, setScrollTarget] = useState(null);
 
   const setActivePage = (page, scrollTargetId = null) => {
-  setActivePageState(page);
+    setActivePageState(page);
+    setScrollTarget(scrollTargetId);
 
-  if (scrollTargetId) {
-    setTimeout(() => {
-      const element = document.getElementById(scrollTargetId);
-      if (element) {
-        const yOffset = -80; 
-        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    }, 150); 
-  }
-};
+    if (scrollTargetId) {
+      setTimeout(() => {
+        const element = document.getElementById(scrollTargetId);
+        if (element) {
+          const yOffset = -80;
+          const y =
+            element.getBoundingClientRect().top +
+            window.pageYOffset +
+            yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 150);
+    }
+  };
+
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden">
-
       <div className="fixed top-0 left-0 w-full z-[1000]">
-
         <div className="hidden sm:block">
           <InformationBar />
         </div>
+
         <Navbar setActivePage={setActivePage} activePage={activePage} />
       </div>
 
@@ -42,7 +48,8 @@ function App() {
         {activePage === "faq" && <FAQPage />}
         {activePage === "contact" && <ContactUs />}
       </div>
-       <ToastContainer position="top-right" autoClose={3000} />
+
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }

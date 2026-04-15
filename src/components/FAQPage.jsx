@@ -193,23 +193,19 @@ const FAQPage = ({ setActivePage }) => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                <button
+                {/* <button
                   onClick={() => {
-                    setActivePage("contact"); 
-                    setTimeout(() => {        
+                    setActivePage("contact");
+                    setTimeout(() => {
                       const element = document.getElementById("book-ride-form");
-                      if (element) {
-                        const yOffset = -80; 
-                        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                      }
-                    }, 100);
+                      if (element) element.scrollIntoView({ behavior: "smooth" });
+                    }, 500);
                   }}
                   style={{ backgroundColor: brandBlue }}
                   className="w-full sm:w-auto text-white font-bold py-3.5 px-8 rounded-xl text-[13px] active:scale-95 transition-all shadow-md"
                 >
                   Book Now
-                </button>
+                </button> */}
                 <button
                   onClick={() => window.open("tel:+447999435333")}
                   style={{ borderColor: brandBlue, color: brandBlue }}
@@ -268,7 +264,7 @@ const FAQPage = ({ setActivePage }) => {
                 letterSpacing: "1px",
               }}
             >
-             St Andrews <span style={{ color: "#fff" }}>TAXI</span>
+              St Andrews <span style={{ color: "#fff" }}>TAXI</span>
             </h2>
             <p
               style={{
@@ -450,7 +446,7 @@ const FAQPage = ({ setActivePage }) => {
               © 2026 St Andrews Taxi. All rights reserved.
             </p>
             <p style={{ margin: "0" }}>
-              St Andrews Cabs LTD trading as St Andrews Taxi 
+              St Andrews Cabs LTD trading as St Andrews Taxi
             </p>
             <p style={{ margin: "10px 0 0 0" }}>
               Developed by MindCraft Ltd.

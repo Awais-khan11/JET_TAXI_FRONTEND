@@ -133,8 +133,8 @@ export const ServiceGrid = ({ setActivePage }) => {
         </Swiper>
 
         {/* Custom Pagination & Description */}
-        <div className="mt-8">
-          <div className="flex gap-2 mb-8">
+        <div className="mt-8 ">
+          <div className="flex gap-2 mb-8 ">
             {services.map((_, i) => (
               <div
                 key={i}
